@@ -85,7 +85,7 @@ inlier_count respectively.
 
 repeat.....
 
-### Output
+## Output
 
 **Video without Noise**
 
@@ -120,5 +120,15 @@ second video **RANSAC algorithm** should be opted.
 ![s1](git_images/s3.png)
 
 ![s1](git_images/s4.png)
+
+
+### References
+1) https://math.stackexchange.com/questions/494238/how-to-compute-homography-matrix-h-from-corresponding-points-2d-2d-planar-homog
+2) https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin_cobyla.html
+3) https://math.berkeley.edu/~hutching/teach/54-2017/svd-notes.pdf
+4) https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_video/py_table_of_contents_video/py_table_of_contents_video.html#py-table-of-contentvideo
+5) http://people.duke.edu/~hpgavin/SystemID/CourseNotes/TotalLeastSquares.pdf
+6) https://www.youtube.com/watch?v=UKhh_MmGIjM
+
 
 
