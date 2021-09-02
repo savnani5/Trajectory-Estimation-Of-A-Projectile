@@ -3,7 +3,6 @@
 different videos and compare different fitting methods on basis of efficiency, time of
 execution and goodness of fit etc.
 
-**Input videos**
 
 [Input videos](https://drive.google.com/drive/folders/1gggBKHrBkxIWk9W-foiG3sJGHKkgK0gu?usp=sharing)
 
@@ -58,6 +57,7 @@ a) This file has the implementation of the RANSAC function and it uses
 numpy, math, random, scipy libraries along with sls.py file.
 
 b) For **N iterations** :-
+
 ● Select randomly a subset of s data points from the list of all data
 points.
 
@@ -85,8 +85,40 @@ inlier_count respectively.
 
 repeat.....
 
+### Output
+
+**Video without Noise**
+
+For this video,standard least
+squares technique gives the least
+error(4500.34), and takes the least time to execute(0.0008s), whereas total least
+squares takes more time(0.0019) and has a significant error(9128.40). Also, as the
+RANSAC is a probabilistic model, its performance depends upon the number of
+iterations(i.e parameters), so it gives varying results, also it takes a significant
+amount of time to fit due to its high time complexity(~O( n 3 )). So, for the first
+video **standard least squares** solution should be opted.
+
+
+![s1](git_images/s1.png)
+
+![s1](git_images/s2.png)
 
 
 
+**Video with Noise**
+
+The second video contains a lot of noise, thus it has many outliers present. Now,
+standard least squares and total least squares methods don’t take outliers into
+consideration and thus try to fit them into the curve, but the ransac method takes
+them into consideration and rejects the outliers, to fit a better curve. Here,
+although the RANSAC method takes some time to compute due to its high time
+complexity, but it has the least error(7430.49), which makes it desirable for these
+cases. (NOTE: The error is calculated after removing the outliers.) So, for the
+second video **RANSAC algorithm** should be opted.
+
+
+![s1](git_images/s3.png)
+
+![s1](git_images/s4.png)
 
 
