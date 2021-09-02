@@ -121,6 +121,11 @@ second video **RANSAC algorithm** should be opted.
 
 ![s1](git_images/s4.png)
 
+## How to run the code
+1) Change the directory of input video file in the main1.py file
+```video = "Ball_travel_10fps.mp4"```
+
+2) Run the main.py file.
 
 ### References
 1) https://math.stackexchange.com/questions/494238/how-to-compute-homography-matrix-h-from-corresponding-points-2d-2d-planar-homog
