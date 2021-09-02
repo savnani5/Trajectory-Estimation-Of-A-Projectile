@@ -7,9 +7,8 @@ execution and goodness of fit etc.
 
 [Input videos](https://drive.google.com/drive/folders/1gggBKHrBkxIWk9W-foiG3sJGHKkgK0gu?usp=sharing)
 
-![vid1](git_images/vid1.gif)  ![vid2](git_images/vid2.gif)
 
-### *sls.py*
+### sls.py
 a) This file has the standard least square function and it uses numpy for
 matrix operations. To implement this function X and Y matrices are
 created using the data points found from the video.
@@ -53,7 +52,7 @@ the initial(a,b) and the last coefficient(c) from V. Finally, divide the initial
 coefficients by c to get the final coefficients. Return them to the main.py
 file.
 
-###*ransac.py*
+### ransac.py
 
 a) This file has the implementation of the RANSAC function and it uses
 numpy, math, random, scipy libraries along with sls.py file.
@@ -61,14 +60,18 @@ numpy, math, random, scipy libraries along with sls.py file.
 b) For **N iterations** :-
 ● Select randomly a subset of s data points from the list of all data
 points.
+
 ● Fit a model to those data points using std_least_square function(it
 will fit perfectly, because we have 3 points).
+
 ● After fitting the model, solve the constraint optimization problem
 using scipy for each point and find the distance from the point to the
 curve.
+
 ● After finding the distance compare it with the threshold(t), if the
 distance is less than t increment the inlier_count. Do this for all
 points for a single model.
+
 ● Now, if the new model has the higher inlier_count update the
 best_model
 and
@@ -78,7 +81,8 @@ with
 result
 and
 inlier_count respectively.
-○ best_model ← result
+  ○ best_model ← result
+
 repeat.....
 
 
