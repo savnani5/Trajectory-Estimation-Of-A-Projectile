@@ -123,7 +123,9 @@ second video **RANSAC algorithm** should be opted.
 
 ## How to run the code
 1) Change the directory of input video file in the main1.py file
-```video = "Ball_travel_10fps.mp4"```
+    ```PY
+      video = "Ball_travel_10fps.mp4"
+    ```
 
 2) Run the main.py file.
 
