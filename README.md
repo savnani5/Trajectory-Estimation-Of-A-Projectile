@@ -1,7 +1,7 @@
 # Trajectory-Estimation-Of-A-Projectile
 **Objective**: To fit the best curve for the ball’s trajectory using the input from two
 different videos and compare different fitting methods on basis of efficiency, time of
-execution and goodness of fit etc.
+execution and goodness of fit etc. For detailed report checkout [this link](https://github.com/savnani5/Trajectory-Estimation-Of-A-Projectile/blob/main/Documentation/ENPM673-%20HW1.pdf).
 
 
 [Input videos](https://drive.google.com/drive/folders/1gggBKHrBkxIWk9W-foiG3sJGHKkgK0gu?usp=sharing)
